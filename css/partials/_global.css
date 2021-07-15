@@ -1,0 +1,53 @@
+/* Buttons */
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--Oswald);
+  color: var(--text-color);
+}
+
+/* button */
+.button {
+  display: inline-block;
+  border: 1px solid var(--primary-color);
+  border-radius: 30px;
+  color: #222;
+  font-weight: 600;
+  padding: 12px 50px;
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: all 0.4s ease;
+}
+
+
+.navbar_fixed{
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  background: #fff !important;
+  width: 100% !important;
+  z-index: 999;
+}
