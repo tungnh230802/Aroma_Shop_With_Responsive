@@ -12,24 +12,23 @@
 .main_menu {
   position: relative;
   box-shadow: var(--shadow-color);
-  transition: background .4s , all .3s linear;
+  transition: background 0.4s, all 0.3s linear;
   z-index: 999;
 }
 
 .header_area {
-  transition: background 0.4s, all 0.3s linear;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar-nav {
-  flex-direction: row;
-  margin-left: 80px;
+.header_nav_toggle {
+  display: none;
 }
 
-.header_nav_toggle{
-  display: none;
+.navbar-nav {
+  flex-direction: row;
+  margin-left: 70px;
 }
 
 .main_menu .icon-bar {
@@ -37,7 +36,7 @@
   width: 25px;
   height: 3px;
   background-color: var(--primary-color);
-  margin:auto;
+  margin: auto;
   margin-bottom: 4px;
   transition: all 400ms linear;
   cursor: pointer;
@@ -54,14 +53,14 @@
 .header_area .navbar-nav .nav-item:hover .header_nav-link {
   color: var(--primary-color);
 }
-.header_area .navbar-nav .nav-item .header_nav-link {
+/* .header_area .navbar-nav .nav-item .header_nav-link {
   padding: 32px 0;
   font-family: var(--roboto);
   font-weight: 500;
   color: var(--text-color);
   font-size: 15px;
   line-height: 1.667;
-}
+} */
 
 .header_area .navbar-nav .nav-item .active {
   color: var(--primary-color);
@@ -186,13 +185,13 @@
   font-family: var(--roboto);
   color: var(--text-color2);
   margin-bottom: 12px;
-  font-weight: 700;
+  font-weight: 100;
 }
 
 .main-banner_content h1 {
   font-size: 50px;
   margin-bottom: 25px;
-  font-weight: 700;
+  font-weight: bold;
   color: var(--text-color);
   font-family: var(--roboto);
   text-transform: uppercase;
@@ -356,10 +355,11 @@
   color: var(--primary-color);
 }
 
-/* mian sale */
+/* main sale */
 .main_sale {
   display: block;
-  background: url("../img/backgroup_lg.webp") right center no-repeat;
+  background-position:20px 30px;
+  background: url("../img/backgroup_lg.webp") no-repeat;
   background-size: 100% 100%;
   height: 500px;
 }
@@ -376,10 +376,11 @@
 .main_sale .main_sale-content h4 {
   font-size: 30px;
   margin-bottom: 8px;
+  color: var(--text-color);
 }
 
-.main_sale .main_sale-content h4 {
-  color: #555;
+.main_sale .main_sale-content p {
+  color:var(--text-color2)
 }
 
 .main_sale .main_sale-content .button--active:hover {

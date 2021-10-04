@@ -32,7 +32,7 @@ body {
   --shadow-color: 0 10px 27px 3px rgb(221 221 221 / 30%);
   --shadow-subcribe:0 -5px 20px 0 rgb(56 74 235 / 10%);
   --backgroud-overlay: rgba(255, 255, 255, 0.8);
-  --header-height: 89px;
+  --header-height: 90px;
   --banner-color: #f1f6f7;
   /* font family variables. */
   --roboto: "Roboto", sans-serif;
