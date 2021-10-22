@@ -1,3 +1,6 @@
+const query = document.querySelector.bind(document);
+const queryAll = document.querySelectorAll.bind(document);
+
 const app = {
   productSile: function () {
     $("#product_slide .owl-carousel").owlCarousel({
@@ -18,9 +21,9 @@ const app = {
         991: {
           items: 3,
         },
-        1119:{
-          items:4,
-        }
+        1119: {
+          items: 4,
+        },
       },
     });
   },
@@ -44,9 +47,9 @@ const app = {
         991: {
           items: 3,
         },
-        1119:{
-          items:4,
-        }
+        1119: {
+          items: 4,
+        },
       },
     });
   },
@@ -56,7 +59,6 @@ const app = {
     if ($(".main_menu").length) {
       $(window).scroll(function () {
         let scroll = $(window).scrollTop();
-        console.log(scroll);
         if (scroll >= nav_offset_top) {
           $(".main_menu").addClass("navbar_fixed");
         } else {
@@ -66,11 +68,12 @@ const app = {
     }
   },
   handleEvents: function () {
-    document.getElementById("nav_toggle").onclick = function () {
+    // sự kiến click để mở navbar ở mobile
+    query("#nav_toggle").onclick = function () {
       click_Toggle();
     };
 
-    let nav = document.querySelector(".header_area .navbar-nav");
+    let nav = query(".header_area .navbar-nav");
 
     function click_Toggle() {
       if (nav.style.display == "flex") {
@@ -79,6 +82,47 @@ const app = {
         nav.style.display = "flex";
       }
     }
+    
+
+    // sự kiện select ở shopcategory
+    const niceSelects = queryAll(".nice-select");
+    niceSelects.forEach((niceSelect) => {
+      niceSelect.onclick = function () {
+        // if (query(".nice-select.open")) {
+        //   niceSelect.classList.remove("open");
+        // } else {
+        //   niceSelect.classList.add("open");
+        // }
+        if(this.classList.contains("open")) {
+
+          this.classList.remove("open");
+        } else {
+          this.classList.add("open");
+        }
+      };
+
+      const options = queryAll(".default .option");
+      options.forEach((option, index) => {
+        option.onclick = function () {
+          query(".default .option.selected.focus").classList.remove("selected", "focus");
+          this.classList.add("selected", "focus");
+
+          const selectSpan = query(".default .nice-select span");
+          selectSpan.innerText = query(".default .option.focus").innerText;
+        };
+      });
+
+      const options2 = queryAll(".show .option");
+      options2.forEach((option, index) => {
+        option.onclick = function () {
+          query(".show .option.selected.focus").classList.remove("selected", "focus");
+          this.classList.add("selected", "focus");
+
+          const selectSpan = query(".show .nice-select span");
+          selectSpan.innerText = query(".show .option.focus").innerText;
+        };
+      });
+    });
   },
   start: function () {
     this.productSile();

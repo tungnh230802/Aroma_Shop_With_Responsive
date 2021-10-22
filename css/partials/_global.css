@@ -29,6 +29,13 @@ h6 {
   color: var(--text-color);
 }
 
+.mt-10 {
+  margin-top: -15px !important;
+}
+
+.mr-auto {
+  margin-right: auto !important;
+}
 /* button */
 .button {
   display: inline-block;

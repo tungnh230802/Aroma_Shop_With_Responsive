@@ -4,8 +4,7 @@
   box-sizing: inherit;
 }
 
-html,
-body {
+html body {
   color: #777;
   font-family: var(--roboto);
   font-size: 15px;
@@ -20,17 +19,25 @@ body {
 
 :root {
   --primary-color: #384aeb;
-  --primary-op-color:#8894ff;
+  --primary-op-color: #8894ff;
   --text-color: #222;
   --text-color2: #555;
-  --text-color3:#999;
-  --text-footer:#7b838a;
-  --color-footer:#002347;
+  --text-color3: #999;
+  --text-color4: #777;
+  --text-des: #777777;
+  --text-footer: #7b838a;
+  --color-footer: #002347;
+  --input-color: #999999;
   --white-color: #fff;
   --border-color: #ededed;
-  --color-footer-bottom:rgba(0,35,71,.980392);
+  --border-select: #eee;
+  --border-product: #eeeeee;
+  --color-hover: #f6f6f6;
+  --background-banner: #f1f6f7;
+  --color-footer-bottom: rgba(0, 35, 71, 0.980392);
   --shadow-color: 0 10px 27px 3px rgb(221 221 221 / 30%);
-  --shadow-subcribe:0 -5px 20px 0 rgb(56 74 235 / 10%);
+  --shadow-subcribe: 0 -5px 20px 0 rgb(56 74 235 / 10%);
+  --shadow-select: 0 0 0 1px rgb(68 68 68 / 11%);
   --backgroud-overlay: rgba(255, 255, 255, 0.8);
   --header-height: 90px;
   --banner-color: #f1f6f7;
