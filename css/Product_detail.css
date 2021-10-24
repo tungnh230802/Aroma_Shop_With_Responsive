@@ -8,16 +8,10 @@
 @import url(./partials/_global.css);
 
 /* import header css file */
-@import url(./header.css);
+@import url(./main_header.css);
 
-/* import footer css file */
-@import url(./footer.css);
-
-/* import cate_banner css file */
-@import url(./cate_banner.css);
-
-/* import cate_top-product css file */
-@import url(./cate_top-product.css);
+/* import category css file */
+@import url(./category.css);
 
 /* product detail */
 .Product_detail-area {
