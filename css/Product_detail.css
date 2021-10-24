@@ -101,6 +101,7 @@
   transition: all 0.3s ease 0s;
 }
 
+
 .product_count button:hover {
   color: var(--text-color);
 }
@@ -189,7 +190,7 @@
   display: block;
 }
 
-.table-responsive td{
+.table-responsive td {
   padding-left: 65px;
   padding-right: 65px;
   padding-top: 14px;
@@ -199,10 +200,144 @@
 .table-responsive td h5 {
   font-size: 14px;
   font-weight: normal;
-  color:var(--text-color4);
+  color: var(--text-color4);
   margin-bottom: 0;
   white-space: nowrap;
 }
+
+.comment_list .review_item {
+  margin-bottom: 10px;
+}
+
+.media {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.media .d-flex {
+  padding-right: 15px;
+}
+
+.media .info-body {
+  vertical-align: middle;
+  align-self: center;
+}
+
+.media h4 {
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 4px;
+}
+
+.media h5 {
+  font-size: 13px;
+  font-weight: normal;
+  color: var(--text-des);
+}
+
+.media .reply_btn {
+  position: absolute;
+  right: 0;
+  top: 14px;
+}
+
+.review_item p {
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.review_item.reply {
+  padding-left: 25px;
+}
+
+.review_box h4 {
+  font-size: 20px;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.review_box form {
+  margin-top: 15px;
+}
+
+.review_box .form-group {
+  margin-bottom: 1rem;
+}
+
+/* review */
+.total-rate .box-title {
+  background-color: var(--background-banner);
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.box-title h5 {
+  color: var(--text-color5);
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.box-title h4 {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.box-title h6 {
+  font-family: var(--roboto);
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--text-color6);
+  font-weight: normal;
+}
+
+.total-rate .rating-list {
+  margin-bottom: 30px;
+}
+
+.rating-list h3 {
+  font-size: 18px;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.bi-star-fill,
+.bi-star {
+  color: var(--star-color);
+}
+
+.rating-list li a i:first-child {
+  margin-left: 15px;
+}
+
+.rating-list li a i:last-child {
+  margin-right: 15px;
+}
+
+.review-list .review_item {
+  margin-bottom: 10px;
+}
+
+.review_box .list {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.review_box p {
+  margin-bottom: 0;
+  color: var(--text-color6);
+  display: inline-block;
+}
+
+.review_box .list li {
+  display: inline-block;
+}
+
 
 /* default */
 .top_product {

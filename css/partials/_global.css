@@ -6,9 +6,14 @@ button {
   border: none;
 }
 
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
 ul {
   list-style-type: none;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -43,11 +48,10 @@ h6 {
   display: inline-block;
   border: 1px solid var(--primary-color);
   border-radius: 30px;
-  color: #222;
+  color: var(--white-color);
   font-weight: 600;
   padding: 12px 50px;
   background-color: var(--primary-color);
-  color: #fff;
   transition: all 0.4s ease;
 }
 
@@ -62,9 +66,22 @@ h6 {
 
 .navbar_fixed {
   position: fixed !important;
-  /* top: 0;
-  left: 0; */
-  background: #fff !important;
+  background: var(--white-color) !important;
   width: 100% !important;
   z-index: 999;
+}
+
+.reply_btn {
+  border: 1px solid var(--rely-btn);
+  padding: 0 28px;
+  display: inline-block;
+  line-height: 32px;
+  border-radius: 16px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.reply_btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }

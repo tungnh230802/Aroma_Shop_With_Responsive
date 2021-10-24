@@ -140,6 +140,22 @@ const app = {
     btn_decrease.onclick = function () {
       if (stt.value > 0) stt.value--;
     };
+
+    // sự lý tab-pane product description
+    const navLinks = queryAll(".nav-item .nav-link");
+    const tabPanes = queryAll(".tab_content .tab-pane");
+
+    navLinks.forEach((nav, index) => {
+      const tab = tabPanes[index];
+      nav.onclick = function (e) {
+        e.preventDefault();
+        query(".nav-link.active").classList.remove("active");
+        query(".tab-pane.active").classList.remove("active");
+
+        nav.classList.add("active");
+        tab.classList.add("active");
+      };
+    });
   },
   start: function () {
     this.productSile();
