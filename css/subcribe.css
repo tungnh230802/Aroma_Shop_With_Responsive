@@ -1,0 +1,57 @@
+/* main_subcribe */
+.main_subcribe {
+  position: relative;
+  top: 100px;
+  margin-bottom: 0;
+}
+
+.subcribe_are {
+  padding: 85px 10px;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  box-shadow: var(--shadow-subcribe);
+}
+
+.subcribe_title {
+  font-size: 36px;
+}
+
+.subcribe_sign {
+  margin-bottom: 0;
+  display: flex;
+  flex-flow: nowrap;
+  margin-left: auto;
+}
+
+.subcribe-form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.subcribe-form .form-input {
+  margin-left: auto;
+}
+
+.subcribe-form .form-input .form-ip_email {
+  min-width: 380px;
+  border-radius: 30px;
+  border: 1px solid #eee;
+  padding-left: 20px;
+  font-size: 14px;
+  height: 50px;
+  outline: none;
+  background-color: transparent;
+}
+
+.button-subcribe {
+  margin-left: 15px;
+  padding: 12px 35px;
+  font-size: 15px;
+  margin-right: auto;
+}
+
+.button-subcribe:hover {
+  color: var(--text-color);
+  background-color: transparent;
+}

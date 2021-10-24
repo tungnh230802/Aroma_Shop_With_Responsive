@@ -1,0 +1,18 @@
+/* mobile & tablet */
+@media (max-width: 992px) {
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    .footer_area{
+        padding-top: 60px !important;
+    }
+}
+
+/* lg */
+@media (max-width: 1199px) {
+}

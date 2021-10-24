@@ -82,7 +82,6 @@ const app = {
         nav.style.display = "flex";
       }
     }
-    
 
     // sự kiện select ở shopcategory
     const niceSelects = queryAll(".nice-select");
@@ -93,8 +92,7 @@ const app = {
         // } else {
         //   niceSelect.classList.add("open");
         // }
-        if(this.classList.contains("open")) {
-
+        if (this.classList.contains("open")) {
           this.classList.remove("open");
         } else {
           this.classList.add("open");
@@ -104,7 +102,10 @@ const app = {
       const options = queryAll(".default .option");
       options.forEach((option, index) => {
         option.onclick = function () {
-          query(".default .option.selected.focus").classList.remove("selected", "focus");
+          query(".default .option.selected.focus").classList.remove(
+            "selected",
+            "focus"
+          );
           this.classList.add("selected", "focus");
 
           const selectSpan = query(".default .nice-select span");
@@ -115,7 +116,10 @@ const app = {
       const options2 = queryAll(".show .option");
       options2.forEach((option, index) => {
         option.onclick = function () {
-          query(".show .option.selected.focus").classList.remove("selected", "focus");
+          query(".show .option.selected.focus").classList.remove(
+            "selected",
+            "focus"
+          );
           this.classList.add("selected", "focus");
 
           const selectSpan = query(".show .nice-select span");
@@ -123,6 +127,19 @@ const app = {
         };
       });
     });
+
+    // sự kiện ấn thêm/giảm hàng product-detail
+    const btn_increase = query(".product_count .increase");
+    const btn_decrease = query(".product_count .decrease");
+    const sst = query(".product_count #stt").value;
+
+    btn_increase.onclick = function () {
+      stt.value++;
+    };
+
+    btn_decrease.onclick = function () {
+      if (stt.value > 0) stt.value--;
+    };
   },
   start: function () {
     this.productSile();

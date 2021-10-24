@@ -8,6 +8,8 @@ button {
 
 ul {
   list-style-type: none;
+  margin:0;
+  padding: 0;
 }
 
 li {
@@ -47,6 +49,15 @@ h6 {
   background-color: var(--primary-color);
   color: #fff;
   transition: all 0.4s ease;
+}
+
+.button-banner {
+  padding: 12px 41px;
+}
+
+.button-banner:hover {
+  color: var(--text-color);
+  background-color: transparent;
 }
 
 .navbar_fixed {
