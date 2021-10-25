@@ -32,8 +32,12 @@ html body {
   --input-color: #999999;
   --white-color: #fff;
   --border-color: #ededed;
+  --order-color:#e8f0f2;
   --border-select: #eee;
   --border-product: #eeeeee;
+  --border-order:#dddddd;
+  --rdo-border:#C5322D;
+  --rdo-background:#C5322D;
   --color-hover: #f6f6f6;
   --star-color: #fbd600;
   --rely-btn: #e0e0e0;

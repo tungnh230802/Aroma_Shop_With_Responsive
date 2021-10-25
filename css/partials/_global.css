@@ -64,6 +64,21 @@ h6 {
   background-color: transparent;
 }
 
+.button-login {
+  font-size: 15px;
+  padding: 7px 44px;
+}
+
+.button-coupon {
+  font-size: 15px;
+  padding: 6px 45px;
+}
+
+.button-pay {
+  width: 100%;
+  padding: 8px 30px;
+}
+
 .navbar_fixed {
   position: fixed !important;
   background: var(--white-color) !important;

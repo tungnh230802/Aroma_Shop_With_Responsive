@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Aroma Shop - Home</title>
+
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="./icons/icons-1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- owl-carousel -->
+    <link
+      rel="stylesheet"
+      href="./vendor/owl-carousel/css/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./vendor/owl-carousel/css/owl.theme.default.min.css"
+    />
+
+    <!--  Bootstrap css file  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!--  font awesome icons  -->
+    <link
+      rel="stylesheet"
+      href="./fonts/fontawesome-free-5.15.3-web/css/all.css"
+    />
+
+    <!--  custom css file  -->
+    <link rel="stylesheet" href="./css/product_checkout.css" />
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/responsive_product-detail.css" />
+  </head>
+
+  <body>
+    <div class="Wrap_Arome-shop">
+      <!-- Begin:Header -->
+      <div class="main_menu">
+        <div class="container">
+          <div class="header_area">
+            <a class="navbar-logo" href="./Index.html"
+              ><img src="./img/logo_h.webp" alt="logo"
+            /></a>
+            <button id="nav_toggle" class="header_nav_toggle">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="header_nav-link active"
+                  aria-current="page"
+                  href="./Index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="header_nav-link" aria-current="page" href="#">Shop</a>
+                <ul class="nav_item-ul nav_shop-area">
+                  <li class="nav_item-ul-li">
+                    <a href="./category.html">Shop Category</a>
+                  </li>
+                  <li class="nav_item-ul-li">
+                    <a href="./ProductDetail.html">Product Details</a>
+                  </li>
+                  <li class="nav_item-ul-li">
+                    <a href="#">Product Checkout</a>
+                  </li>
+                  <li class="nav_item-ul-li">
+                    <a href="#">Confirmation</a>
+                  </li>
+                  <li class="nav_item-ul-li">
+                    <a href="#">Shopping Cart</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="header_nav-link" href="#">Blog</a>
+                <ul class="nav_item-ul nav_blog-area">
+                  <li class="nav_item-ul-li">
+                    <a href="#">Blog</a>
+                  </li>
+                  <li class="nav_item-ul-li">
+                    <a href="#">Blog Details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="header_nav-link" href="#">Pages</a>
+                <ul class="nav_item-ul nav_shop-area">
+                  <li class="nav_item-ul-li">
+                    <a href="#">Login</a>
+                  </li>
+                  <li class="nav_item-ul-li">
+                    <a href="#">Register</a>
+                  </li>
+                  <li class="nav_item-ul-li">
+                    <a href="#">Tracking</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="header_nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <ul class="nav-shop">
+              <li class="nav-item">
+                <button><i class="bi bi-search"></i></button>
+              </li>
+              <li class="nav-item">
+                <button>
+                  <i class="bi bi-cart"></i>
+                  <span class="nav-shop__circle">3</span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="button button_header">Buy Now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End:Header -->
+
+      <!-- Begin:Banner Category -->
+      <section class="category_banner">
+        <div class="container h-100">
+          <div class="context-banner">
+            <div class="text-center">
+              <h1>Shop Category</h1>
+              <h4><a href="#">Home</a> -Shop Category</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End:Banner Category -->
+
+      <!-- Begin:Product Checkout -->
+      <section class="checkout_area">
+        <div class="container">
+          <div class="login_customer">
+            <div class="check_title">
+              <h2>
+                Returning Customer?
+                <a href="#">Click here to login</a>
+              </h2>
+            </div>
+            <p>
+              If you have shopped with us before, please enter your details in
+              the boxes below. If you are a new customer, please proceed to the
+              Billing & Shipping section.
+            </p>
+            <form action="#" class="row contact-form">
+              <div class="col-md-6 form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Username or email"
+                  id="name"
+                  name="name"
+                />
+              </div>
+              <div class="col-md-6 form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Passwork"
+                  id="passwork"
+                  name="passwork"
+                />
+              </div>
+              <div class="col-md-12 form-group">
+                <button
+                  type="submit"
+                  value="submit"
+                  class="button button-banner button-login"
+                >
+                  login
+                </button>
+                <div class="remember">
+                  <input type="checkbox" name="remember" id="remember_ac" />
+                  <label for="remember_ac">Remember me</label>
+                </div>
+                <a href="#" class="loss-pass">Lost your password?</a>
+              </div>
+            </form>
+          </div>
+          <div class="coupon-area">
+            <div class="check_title">
+              <h2>
+                Have a coupon?
+                <a href="#">Click here to enter your code</a>
+              </h2>
+            </div>
+            <input type="text" placeholder="Enter coupon code" />
+            <a href="#" class="button button-banner button-coupon"
+              >Apply Coupon</a
+            >
+          </div>
+          <div class="bill-detail">
+            <div class="row">
+              <div class="col-lg-8">
+                <h3 class="title">Billing Details</h3>
+                <form class="contact-form row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      id="first"
+                      placeholder="First name"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      id="last"
+                      placeholder="Last name"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-md-12 form-group">
+                    <input
+                      type="text"
+                      name="company"
+                      id="company"
+                      placeholder="Company name"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="number"
+                      id="number"
+                      placeholder="number"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      placeholder="Email address"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-md-12 form-group">
+                    <input
+                      type="text"
+                      name="postcode"
+                      id="postcode"
+                      placeholder="Post code"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-md-12 form-group">
+                    <div class="create-ac">
+                      <input type="checkbox" name="selector" id="option2" />
+                      <label for="option2">Create an account?</label>
+                    </div>
+                  </div>
+                  <div class="col-md-12 form-group mb-0">
+                    <div class="create-ac">
+                      <h3>Shipping Details</h3>
+                      <input type="checkbox" name="selector" id="option3" />
+                      <label for="option3">Ship to a different address?</label>
+                    </div>
+                    <textarea
+                      name="message"
+                      id="message"
+                      rows="4"
+                      class="form-control"
+                      placeholder="Order notes"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-4">
+                <div class="order-box">
+                  <h2>Your Order</h2>
+                  <ul class="list">
+                    <li>
+                      <a href="#">
+                        <h4>Product <span>Total</span></h4>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Fresh Blackberry
+                        <span class="middle">x 02</span>
+                        <span class="last">$720.00</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Fresh Tomatoes
+                        <span class="middle">x 02</span>
+                        <span class="last">$720.00</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Fresh Brocoli
+                        <span class="middle">x 02</span>
+                        <span class="last">$720.00</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="list list-2">
+                    <li>
+                      <a href="#"> Subtotal <span>$2160.00</span> </a>
+                    </li>
+                    <li>
+                      <a href="#"> Shipping <span>Flat rate: $50.00</span> </a>
+                    </li>
+                    <li>
+                      <a href="#"> Total <span>$2210.00</span> </a>
+                    </li>
+                  </ul>
+                  <div class="pay-item">
+                    <div class="rdo-btn">
+                      <input type="radio" name="selector" id="option-3" />
+                      <label for="option-3">Check payments</label>
+                      <div class="check"></div>
+                    </div>
+                    <p>
+                      Please send a check to Store Name, Store Street, Store
+                      Town, Store State / County, Store Postcode.
+                    </p>
+                  </div>
+                  <div class="pay-item active">
+                    <div class="rdo-btn">
+                      <input type="radio" name="selector" id="option-4" />
+                      <label for="option-4">Paypal</label>
+                      <img src="./img/pay.webp" alt="" />
+                      <div class="check"></div>
+                    </div>
+                    <p>
+                      Please send a check to Store Name, Store Street, Store
+                      Town, Store State / County, Store Postcode.
+                    </p>
+                  </div>
+                  <div class="create-ac">
+                    <input type="checkbox" name="selector" id="option5" />
+                    <label for="option5">I’ve read and accept the </label>
+                    <a href="#">terms & conditions*</a>
+                  </div>
+                  <div class="text-center">
+                    <a href="#" class="button button-banner button-pay"
+                      >Proceed to Paypal</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End:Product Checkout -->
+
+      <!-- Begin:footer -->
+      <footer class="footer">
+        <div class="footer_area">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_area-single tp_widgets">
+                  <h4 class="footer_title large_title">Our Mission</h4>
+                  <p>
+                    So seed seed green that winged cattle in. Gathering thing
+                    made fly you're no divided deep moved us lan Gathering thing
+                    us land years living.
+                  </p>
+                  <p>
+                    So seed seed green that winged cattle in. Gathering thing
+                    made fly you're no divided deep moved
+                  </p>
+                </div>
+              </div>
+              <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+                <div class="footer_area-single tp_widgets">
+                  <h4 class="footer_title">Quick Links</h4>
+                  <ul class="footer_list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Brand</a></li>
+                    <li><a href="">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="footer_area-single tp_widgets instafeed">
+                  <h4 class="footer_title">Gallery</h4>
+                  <ul class="footer_list instafeed d-flex flex-wrap">
+                    <li><img src="./img/gallary1.webp" alt="gallary" /></li>
+                    <li><img src="./img/gallary2.webp" alt="gallary" /></li>
+                    <li><img src="./img/gallary3.webp" alt="gallary" /></li>
+                    <li><img src="./img/gallary4.webp" alt="gallary" /></li>
+                    <li><img src="./img/gallary5.webp" alt="gallary" /></li>
+                    <li><img src="./img/gallary6.webp" alt="gallary" /></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_area-single tp_widgets">
+                  <h4 class="footer_title">Contact Us</h4>
+                  <div class="footer_contact">
+                    <p class="sm_head">
+                      <span class="bi bi-geo-alt"></span> Head Office
+                    </p>
+                    <p>123, Main Street, Your City</p>
+                    <p class="sm_head">
+                      <span class="bi bi-telephone-fill"></span> Phone Number
+                    </p>
+                    <p>
+                      +123 456 7890 <br />
+                      +123 456 7890
+                    </p>
+                    <p class="sm_head">
+                      <span class="bi bi-envelope"></span> Email
+                    </p>
+                    <p>
+                      free@infoexample.com <br />
+                      www.infoexample.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 footer_center text-center">
+                <p>
+                  Copyright ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  All rights reserved | This template is made with
+                  <i class="bi bi-heart-fill"></i> by
+                  <a href="https://colorlib.com/"> Colorlib </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End:footer -->
+    </div>
+
+    <!--  Jquery js file  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--  Bootstrap js file  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- owl-carousel js-->
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

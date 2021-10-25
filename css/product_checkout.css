@@ -1,0 +1,102 @@
+/* import fonts from fonts.css file */
+@import url(./fonts.css);
+
+/* css variables */
+@import url(./partials/_variables.css);
+
+/* import global styling */
+@import url(./partials/_global.css);
+
+/* import header css file */
+@import url(./main.css);
+
+/* import category css file */
+@import url(./category.css);
+
+/* import Product Detail css file */
+@import url(./Product_detail.css);
+
+/* Product checkout */
+.checkout_area {
+  margin: 98px 0;
+}
+
+.check_title h2 {
+  font-size: 15px;
+  font-weight: normal;
+  font-family: var(--roboto);
+  background-color: var(--background-banner);
+  line-height: 40px;
+  padding-left: 30px;
+  margin-bottom: 0;
+}
+
+.check_title h2 a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.login_customer p {
+  margin-top: 15px;
+  padding-left: 30px;
+  margin-bottom: 25px;
+}
+
+.login_customer .contact-form {
+  max-width: 710px;
+  margin-left: 15px;
+}
+
+.contact-form .form-group {
+  /* margin-bottom: 20px; */
+}
+
+.contact-form .form-group input {
+  border: 1px solid var(--border-product);
+  height: 40px;
+  border-radius: 3px;
+  color: var(--input-color);
+  font-weight: normal;
+}
+
+.contact-form .form-group .remember {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.remember input {
+  position: relative;
+  top: 14px;
+  margin-right: 15px;
+}
+
+.contact-form .form-group .loss-pass {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--text-color4);
+  font-weight: normal;
+}
+
+.coupon-area {
+  margin-top: 20px;
+}
+
+.coupon-area input {
+  margin-left: 30px;
+  max-width: 730px;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  padding: 0 15px;
+  border: 1px solid var(--border-product);
+  outline: none;
+  box-shadow: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.coupon-area .button-coupon{
+    margin-left: 30px;
+}
