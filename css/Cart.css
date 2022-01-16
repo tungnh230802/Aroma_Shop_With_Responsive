@@ -1,0 +1,148 @@
+.cart-area {
+  padding-top: 90px;
+  padding-bottom: 55px;
+}
+
+.cart-area tr th {
+  border-top: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--Oswald);
+  color: var(--text-color);
+  border-color: var(--text-color3) !important;
+}
+
+tbody tr td {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  vertical-align: middle;
+  align-self: center;
+}
+
+.media {
+  display: flex;
+}
+
+.media .d-flex {
+  padding-right: 30px;
+}
+
+.media img {
+  border-radius: 3px;
+  width: 150px;
+  height: 150px;
+}
+
+.media-body {
+  vertical-align: middle;
+  align-self: center;
+}
+
+tbody {
+  margin-bottom: 0;
+  color: var(--text-color4);
+  font-family: var(--roboto);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+tbody p {
+  margin-bottom: 0;
+}
+
+tbody h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-color);
+  font-family: var(--roboto);
+  margin-bottom: 0;
+}
+
+.product-count {
+  position: relative;
+  margin-bottom: 0;
+  display: inline-block;
+  border: 1px initial aliceblue;
+  border: 1px initial;
+  /* border-color: red; */
+}
+
+.product-count .increase-item::before {
+  content: "";
+  height: 40px;
+  position: absolute;
+  width: 1px;
+  left: -3px;
+  top: 6px;
+  background: #eeeeee;
+}
+
+.product-count .increase-item::after {
+  content: "";
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  background: #eeeeee;
+  left: -3px;
+  top: 26px;
+}
+
+.product-count input {
+  width: 100px;
+  padding-left: 30px;
+  height: 40px;
+  outline: none;
+  box-sizing: none;
+  /* border-radius: 3px;
+  border-color: #eeeeee; */
+  /* border-color: #999; */
+  border: 1px unset;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+}
+
+.product-count button {
+  display: block;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  font-size: 18px;
+  color: #cccccc;
+  /* padding: 0; */
+  /* font-weight: 100; */
+}
+
+button.decrease-item {
+  top: 14px;
+}
+
+button.increase-item {
+  top: -6px;
+}
+
+.button-cart-update {
+  border-color: #eeeeee;
+  background: #f9f9f9;
+  font-size: 15px;
+  padding: 7px 45px;
+  color: #000;
+  font-weight: 100;
+}
+
+.button-cart-update:hover {
+  color: var(--primary-color);
+}
+
+.button-apply {
+  background-color: var(--primary-color);
+  color: white;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  padding:7px 40px;
+}
+
+.button-apply:hover{
+  color:white;
+}

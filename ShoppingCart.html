@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Aroma Shop - Home</title>
+
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="./icons/icons-1.5.0/font/bootstrap-icons.css"
+    />
+
+    <!-- owl-carousel -->
+    <link
+      rel="stylesheet"
+      href="./vendor/owl-carousel/css/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./vendor/owl-carousel/css/owl.theme.default.min.css"
+    />
+
+    <!--  Bootstrap css file  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!--  font awesome icons  -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!--  custom css file  -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Cart css file -->
+    <link rel="stylesheet" href="./css/Cart.css" />
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+
+  <body>
+    <div class="Wrap_Arome-shop">
+      <!-- Begin:Header -->
+      <div class="main_menu">
+        <div class="container">
+          <div class="header_area">
+            <a class="navbar-logo" href="#"
+              ><img src="./img/logo_h.webp" alt="logo"
+            /></a>
+            <button id="nav_toggle" class="header_nav_toggle">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="header_nav-link active" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="header_nav-link" aria-current="page" href="#">Shop</a>
+                <ul class="nav_item-ul nav_shop-area">
+                  <li class="nav_item-ul-li">
+                    <a href="./category.html">Shop Category</a>
+                  </li>
+                  <li class="nav_item-ul-li">
+                    <a href="./ProductDetail.html">Product Details</a>
+                  </li>
+                  <li class="nav_item-ul-li">
+                    <a href="#">Product Checkout</a>
+                  </li>
+                  <li class="nav_item-ul-li">
+                    <a href="#">Confirmation</a>
+                  </li>
+                  <li class="nav_item-ul-li">
+                    <a href="#">Shopping Cart</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="header_nav-link" href="#">Blog</a>
+                <ul class="nav_item-ul nav_blog-area">
+                  <li class="nav_item-ul-li">
+                    <a href="#">Blog</a>
+                  </li>
+                  <li class="nav_item-ul-li">
+                    <a href="#">Blog Details</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="header_nav-link" href="#">Pages</a>
+                <ul class="nav_item-ul nav_shop-area">
+                  <li class="nav_item-ul-li">
+                    <a href="#">Login</a>
+                  </li>
+                  <li class="nav_item-ul-li">
+                    <a href="#">Register</a>
+                  </li>
+                  <li class="nav_item-ul-li">
+                    <a href="#">Tracking</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="header_nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <ul class="nav-shop">
+              <li class="nav-item">
+                <button><i class="bi bi-search"></i></button>
+              </li>
+              <li class="nav-item">
+                <button>
+                  <i class="bi bi-cart"></i>
+                  <span class="nav-shop__circle">3</span>
+                </button>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="button button_header">Buy Now</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- End:Header -->
+
+      <!-- Bein:site-Main -->
+      <main class="site-main">
+        <div class="cart-area">
+          <div class="container">
+            <div class="cart-inner">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="media">
+                        <div class="d-flex">
+                          <img src="./img/tr_pro_1.webp" alt="" />
+                        </div>
+                        <div class="media-body">
+                          <p>Minimalistic shop for multipurpose use</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <h5>$360.00</h5>
+                    </td>
+                    <td>
+                      <div class="product-count">
+                        <input
+                          type="text"
+                          maxlength="12"
+                          value="1"
+                          class="input-text"
+                          id="sst"
+                        />
+                        <button
+                          class="increase-item"
+                          onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                        >
+                          <i class="fa fa-chevron-up"></i>
+                        </button>
+                        <button
+                          class="decrease-item"
+                          onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) && sst > 0 ) result.value--;return false;"
+                        >
+                          <i class="fas fa-chevron-down"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td><h5>$720.00</h5></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="media">
+                        <div class="d-flex">
+                          <img src="./img/tr_pro_1.webp" alt="" />
+                        </div>
+                        <div class="media-body">
+                          <p>Minimalistic shop for multipurpose use</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <h5>$360.00</h5>
+                    </td>
+                    <td>
+                      <div class="product-count">
+                        <input
+                          type="text"
+                          maxlength="12"
+                          value="1"
+                          class="input-text"
+                          id="sst"
+                        />
+                        <button
+                          class="increase-item"
+                          onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                        >
+                          <i class="fa fa-chevron-up"></i>
+                        </button>
+                        <button
+                          class="decrease-item"
+                          onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) && sst > 0 ) result.value--;return false;"
+                        >
+                          <i class="fas fa-chevron-down"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td><h5>$720.00</h5></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="media">
+                        <div class="d-flex">
+                          <img src="./img/tr_pro_1.webp" alt="" />
+                        </div>
+                        <div class="media-body">
+                          <p>Minimalistic shop for multipurpose use</p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <h5>$360.00</h5>
+                    </td>
+                    <td>
+                      <div class="product-count">
+                        <input
+                          type="text"
+                          maxlength="12"
+                          value="1"
+                          class="input-text"
+                          id="sst"
+                        />
+                        <button
+                          class="increase-item"
+                          onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                        >
+                          <i class="fa fa-chevron-up"></i>
+                        </button>
+                        <button
+                          class="decrease-item"
+                          onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) && sst > 0 ) result.value--;return false;"
+                        >
+                          <i class="fas fa-chevron-down"></i>
+                        </button>
+                      </div>
+                    </td>
+                    <td><h5>$720.00</h5></td>
+                  </tr>
+                  <tr class="botton-button">
+                    <td>
+                      <a href="#" class="button button-cart-update"
+                        >Continue Shopping</a
+                      >
+                      <a href="#" class="button button-cart-update button-apply"
+                        >Update Cart</a
+                      >
+                    </td>
+                    <td></td>
+                    <td><h5>Subtotal</h5></td>
+                    <td><h5>$2160.00</h5></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Bein:End-Main -->
+
+      <!-- Begin:footer -->
+      <footer class="footer">
+        <div class="footer_area">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_area-single tp_widgets">
+                  <h4 class="footer_title large_title">Our Mission</h4>
+                  <p>
+                    So seed seed green that winged cattle in. Gathering thing
+                    made fly you're no divided deep moved us lan Gathering thing
+                    us land years living.
+                  </p>
+                  <p>
+                    So seed seed green that winged cattle in. Gathering thing
+                    made fly you're no divided deep moved
+                  </p>
+                </div>
+              </div>
+              <div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+                <div class="footer_area-single tp_widgets">
+                  <h4 class="footer_title">Quick Links</h4>
+                  <ul class="footer_list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Brand</a></li>
+                    <li><a href="">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="footer_area-single tp_widgets instafeed">
+                  <h4 class="footer_title">Gallery</h4>
+                  <ul class="footer_list instafeed d-flex flex-wrap">
+                    <li><img src="./img/gallary1.webp" alt="gallary" /></li>
+                    <li><img src="./img/gallary2.webp" alt="gallary" /></li>
+                    <li><img src="./img/gallary3.webp" alt="gallary" /></li>
+                    <li><img src="./img/gallary4.webp" alt="gallary" /></li>
+                    <li><img src="./img/gallary5.webp" alt="gallary" /></li>
+                    <li><img src="./img/gallary6.webp" alt="gallary" /></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+                <div class="footer_area-single tp_widgets">
+                  <h4 class="footer_title">Contact Us</h4>
+                  <div class="footer_contact">
+                    <p class="sm_head">
+                      <span class="bi bi-geo-alt"></span> Head Office
+                    </p>
+                    <p>123, Main Street, Your City</p>
+                    <p class="sm_head">
+                      <span class="bi bi-telephone-fill"></span> Phone Number
+                    </p>
+                    <p>
+                      +123 456 7890 <br />
+                      +123 456 7890
+                    </p>
+                    <p class="sm_head">
+                      <span class="bi bi-envelope"></span> Email
+                    </p>
+                    <p>
+                      free@infoexample.com <br />
+                      www.infoexample.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 footer_center text-center">
+                <p>
+                  Copyright ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  All rights reserved | This template is made with
+                  <i class="bi bi-heart-fill"></i> by
+                  <a href="https://colorlib.com/"> Colorlib </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End:footer -->
+    </div>
+    <!--  Jquery js file  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--  Bootstrap js file  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- owl-carousel js-->
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
